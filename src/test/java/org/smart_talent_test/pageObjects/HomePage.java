@@ -5,11 +5,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class HomePage {
-    private static WebElement element_page;
+//    Variable para almacenar la información de elemento web
+//    que se requiere buscar.
+    private  WebElement element_page;
 
-    public static WebElement buttonMyAppoiment(WebDriver driver) {
+//    Método que realiza la búsdqueda y retorna el elemeto.
+    public  WebElement buttonMyAppoiment(WebDriver driver) {
 
         element_page = driver.findElement(By.id("btn-make-appointment"));
         return element_page;
+
     }
+
 }
